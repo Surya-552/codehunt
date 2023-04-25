@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeHunt2K23</title>
     <script>
-        let v=8;
+        let v=5;
          document.addEventListener("visibilitychange",()=>{
-          if(document.hidden)
-          window.alert("You want to try tab change!");
-   
+          if(document.hidden){
+              v--;
+          window.alert("You want to try tab change!"+v);
+             }
+             if(v==0)
+                 this.close();
+             
   })
 
     </script>
