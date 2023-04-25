@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: url("ch2.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 10%;
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+
+        img {
+            border-radius: 20px;
+
+        }
+
+        .btn {
+            margin-top: 20%;
+            display: flex;
+            justify-content: space-around;
+        }
+        button:hover{
+            background-color:orange;
+            color: white;
+        }
+
+        button {
+            height: 50px;
+            width: 150px;
+            border-radius: 40px;
+            border-style: none;
+            background-color: white;
+            color: brown;
+            font-size: 20px;
+            font-family: fantasy;
+        }
+     
+        .typewriter{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            align-self: center;
+            width: 50%;
+        }
+        .typewriter h2{
+            font-size: 25px;
+            color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .typewriter q{
+            font-size: 19px;
+            color: orange;
+            font-style: italic;
+            font-weight: 700;
+           
+        }
+        .typewriter h1 {
+            overflow: hidden;
+            /* Ensures the content is not revealed until the animation */
+            border-right: .15em solid orange;
+            /* The typwriter cursor */
+            white-space: nowrap;
+            /* Keeps the content on a single line */
+            margin: 0 auto;
+            /* Gives that scrolling effect as the typing happens */
+            letter-spacing: .15em;
+            /* Adjust as needed */
+            border-radius: 20px;
+            padding: 20px 40px 20px 40px;
+            background-color: white;
+            color: orange;  
+            font-size: 30px;
+            text-transform: uppercase; 
+            animation:
+                typing 3.5s steps(30, end),
+                blink-caret .75s step-end infinite;
+            
+        }
+
+        /* The typing effect */
+        @keyframes typing {
+            from {
+                width: 0
+            }
+
+            to {
+                width: 100%
+            }
+        }
+
+        /* The typewriter cursor effect */
+        @keyframes blink-caret {
+
+            from,
+            to {
+                border-color: transparent
+            }
+
+            50% {
+                border-color: orange;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <!-- <img src="code Hunt.png" alt=""> -->
+        <div class="typewriter">
+            <h2>Welcome to</h2>
+            <h1>
+                code hunt
+            </h1>
+            <h2>Prabandhan 2k23</h2>
+            <q>Pratibhao  ka  sangam  Prabandhan</q>
+        </div>
+        <div class="btn">
+            <button id="btn1">First Year</button>
+            <button id="btn2">Second Year</button>
+            <button id="btn3">Third Year</button>
+        </div>
+    </div>
+</body>
+
+</html>
